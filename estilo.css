@@ -1,0 +1,354 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{ 
+    --ver: #800303;
+    --bra: #fff;
+}
+
+header{
+    margin-top: 50px;
+   
+    position: fixed;
+    top: -70px;
+    width: 100%;
+    background-color: #fff; 
+    color: #fff; 
+}
+header #header{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    margin: 50px 40px 0px 40px;
+    
+}
+
+header h1{
+    margin-bottom: 20px;
+    color: var(--ver);
+    font-size: 17pt;
+    margin-left: 75px;
+    text-shadow: 1px 1px var(--ver);
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+
+header ul li{
+    margin-left: 40px;
+}
+
+header ul li a{
+    color: var(--ver);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+header ul #redes-sociais{
+    margin-left: 20px;
+}
+header ul #redes-sociais a{
+    margin-left: 5px;
+}
+
+#menu-celular{
+    display: none;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ver);
+}
+
+main #apreentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19pt;
+    margin-top: 200px;
+}
+
+main #apreentacao p{
+    margin-top: 15px;
+}
+
+main #apreentacao span{
+    font-size: 15pt;
+    margin-top: 30px;
+    border: 3px solid #800303;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+main #apreentacao span:hover{
+    border-radius: 0px 30px 0px 30px;
+}
+
+
+main #apreentacao span a{
+    color: var(--ver);
+    text-decoration: none;
+}
+
+main section{
+    color: var(--bra);
+    background-color: #800303;
+    width: 100vw;
+    border-radius: 5px;
+    margin: 230px 0px 0px 0px;
+}
+
+main #sobre-mim {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main #sobre-mim  #informacoes p{
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+main #sobre-mim  #informacoes h1{
+    margin-bottom: 10px;
+
+}
+
+main #sobre-mim  #informacoes a{
+    font-weight: 700;
+    color: var(--bra);
+    text-decoration: none;
+}
+
+main #sobre-mim  #informacoes a:hover{
+    
+    text-decoration: underline;
+}
+
+
+
+main #sobre-mim  #oque-faco ul li{
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+main #sobre-mim  #oque-faco ul h1{
+    margin-bottom: 10px;
+}
+
+main #habilidades{
+    padding: 30px 0px; 
+}
+
+main #habilidades h1{
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 25px;
+}
+
+main #habilidades ul{
+    display:flex;
+   justify-content: center;
+    list-style: none;
+}
+
+main #habilidades ul li{
+    margin: 0px 30px ;
+    background-color: #b10505;
+    border-radius:20px;
+    padding: 25px 25px;
+}
+
+main #habilidades ul li img{
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+main #habilidades ul:hover li{
+   transform: scale(0.9000);
+   background-color: #b10505;
+}
+
+main #habilidades ul li:hover{
+    background-color: #ff0505;
+    transform: scale(1.1);
+}
+
+main #projetos{
+    padding:20px 0px;
+}
+
+main #projetos h1{
+    text-align: center;
+}
+
+main  #projetos div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+main #projetos div img{
+    width: 450px;
+    border-radius: 20px;
+    margin-left: 150px;
+    
+}
+
+main #projetos div .informacoes-projeto{
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+}
+
+main #projetos div .informacoes-projeto h3{
+    font-weight: 300;
+}
+
+main #projetos div .informacoes-projeto p{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+main #projetos div .informacoes-projeto button{
+    width: 180px;    
+    font-size: 15pt;
+    font-weight: 100;
+    margin-top: 30px;
+    border: 3px solid #fff;
+    padding: 6px 0px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 0px 30px 0px 30px;
+}
+
+main #projetos div .informacoes-projeto button:hover{
+    border-radius: 20px;
+}
+
+main #projetos div .informacoes-projeto button a{
+    text-decoration:none ;
+    color: #800303;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width:1060px){
+    main section{
+        color: var(--bra);
+        background-color: #800303;
+        width: 100vh;
+        border-radius: 5px;
+        margin: 230px 0px 0px 0px;
+    }
+    
+    header nav #menu{
+        display: none;
+    }
+    
+    #menu-celular{
+        display: block;
+        cursor: pointer;
+    }
+
+    header nav ul#menu{
+        display: none;
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        display:flex ;
+        align-items: center;
+        flex-direction: column;   
+        justify-content: center;
+        transition: 0.3s ease-in;
+        background-color: #800303;
+    }
+
+    header #redes-sociais{
+        display: none;
+    }
+
+    header #header  li a{
+        color: #fff;
+        font-size: 20px;
+    }
+
+    header #header  li{
+        margin-top: 40px
+    }
+
+    header ul img{
+        margin-top: 10px;
+        width: 35px;
+        display: flex;
+    }
+
+    main #apreentacao h2{
+        font-size:20pt ;
+        font-weight: 700;
+    }
+
+    main #apreentacao p{
+        font-size:15pt ;
+        font-weight: 100;
+    }
+
+    #oque-faco{
+        display: none;
+    }
+
+    main #sobre-mim{
+        padding: 10px 30px;
+    }    
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media  (max-width: 628px){
+    nav #menu{
+        display: none;
+    }
+    
+    main #habilidades img{
+        width: 50px;
+    }
+
+    main #habilidades ul li{
+        margin: 5px;
+    }
+
+    header nav ul#menu{
+       display: none;
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        display:flex ;
+        align-items: center;
+        flex-direction: column;   
+        justify-content: center;
+        transition: 0.3s ease-in;
+        background-color: #800303;
+    }
+    
+}

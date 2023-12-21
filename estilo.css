@@ -35,6 +35,12 @@ header h1{
     text-shadow: 1px 1px var(--ver);
 }
 
+header nav{
+    
+    width: 100%;
+    max-width: 600px;
+}
+
 header ul{
     display: flex;
     list-style: none;
@@ -109,8 +115,9 @@ main section{
     color: var(--bra);
     background-color: #800303;
     width: 100vw;
+    height: 100%;
     border-radius: 5px;
-    margin: 230px 0px 0px 0px;
+    margin-top: 230px ;
 }
 
 main #sobre-mim {
@@ -275,105 +282,3 @@ main #projetos #projeto-2  img{
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////*/
-@media (max-width:1060px){
-    main section{
-        color: var(--bra);
-        background-color: #800303;
-        width: 100vh;
-        border-radius: 5px;
-        margin: 230px 0px 0px 0px;
-    }
-    
-    header nav #menu{
-        display: none;
-    }
-    
-    #menu-celular{
-        display: block;
-        cursor: pointer;
-    }
-
-    header nav ul#menu{
-        display: none;
-        position: fixed;
-        width: 60%;
-        height: 100%;
-        top: 0;
-        left: 0;
-
-        display:flex ;
-        align-items: center;
-        flex-direction: column;   
-        justify-content: center;
-        transition: 0.3s ease-in;
-        background-color: #800303;
-    }
-
-    header #redes-sociais{
-        display: none;
-    }
-
-    header #header  li a{
-        color: #fff;
-        font-size: 20px;
-    }
-
-    header #header  li{
-        margin-top: 40px
-    }
-
-    header ul img{
-        margin-top: 10px;
-        width: 35px;
-        display: flex;
-    }
-
-    main #apreentacao h2{
-        font-size:20pt ;
-        font-weight: 700;
-    }
-
-    main #apreentacao p{
-        font-size:15pt ;
-        font-weight: 100;
-    }
-
-    #oque-faco{
-        display: none;
-    }
-
-    main #sobre-mim{
-        padding: 10px 30px;
-    }    
-}
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media  (max-width: 628px){
-    nav #menu{
-        display: none;
-    }
-    
-    main #habilidades img{
-        width: 50px;
-    }
-
-    main #habilidades ul li{
-        margin: 5px;
-    }
-
-    header nav ul#menu{
-       display: none;
-        position: fixed;
-        width: 60%;
-        height: 100%;
-        top: 0;
-        left: 0;
-
-        display:flex ;
-        align-items: center;
-        flex-direction: column;   
-        justify-content: center;
-        transition: 0.3s ease-in;
-        background-color: #800303;
-    }
-    
-}
